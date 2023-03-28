@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 
-@Service
 @RequiredArgsConstructor
 public class MemberServiceV1 {
 
