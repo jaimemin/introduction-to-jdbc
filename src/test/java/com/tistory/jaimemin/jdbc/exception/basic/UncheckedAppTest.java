@@ -1,4 +1,4 @@
-package com.tistory.jaimemin.jdbc.exception;
+package com.tistory.jaimemin.jdbc.exception.basic;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
