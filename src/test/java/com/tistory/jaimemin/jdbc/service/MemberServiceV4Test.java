@@ -3,6 +3,8 @@ package com.tistory.jaimemin.jdbc.service;
 import com.tistory.jaimemin.jdbc.domain.Member;
 import com.tistory.jaimemin.jdbc.repository.MemberRepository;
 import com.tistory.jaimemin.jdbc.repository.MemberRepositoryV4_1;
+import com.tistory.jaimemin.jdbc.repository.MemberRepositoryV4_2;
+import com.tistory.jaimemin.jdbc.repository.MemberRepositoryV5;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -53,7 +55,9 @@ class MemberServiceV4Test {
 
         @Bean
         MemberRepository memberRepository() {
-            return new MemberRepositoryV4_1(dataSource);
+            return new MemberRepositoryV5(dataSource);
+            // return new MemberRepositoryV4_2(dataSource);
+            //return new MemberRepositoryV4_1(dataSource);
         }
 
         @Bean
